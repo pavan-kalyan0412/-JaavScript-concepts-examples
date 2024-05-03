@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Case Sensitivity</title>
+</head>
+<body>
+
+<h2>Case Sensitivity Example</h2>
+
+<p>This program checks whether two strings are case sensitive.</p>
+<pre>var string1 = "Hello";
+     var string2 = "hello";</pre>
+
+<button onclick="checkCase()">Check Case Sensitivity</button>
+
+<p id="result"></p>
+
+<script>
+function checkCase() {
+  var string1 = "Hello";
+  var string2 = "hello";
+
+  if (string1 === string2) {
+    document.getElementById("result").innerHTML = "The strings are case sensitive.";
+  } else {
+    document.getElementById("result").innerHTML = "The strings are case insensitive.";
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Operators</h2>
+
+<p>JavaScript uses various operators for different operations.</p>
+<pre>
+var result1 = 5 + 6; 
+var result2 = 10 - 3; 
+var result3 = 3 * 4; 
+var result4 = 20 / 5; 
+var result5 = 15 % 4;
+</pre>
+
+<p id="demo"></p>
+
+<script>
+// Arithmetic operators
+var result1 = 5 + 6; // Addition
+var result2 = 10 - 3; // Subtraction
+var result3 = 3 * 4; // Multiplication
+var result4 = 20 / 5; // Division
+var result5 = 15 % 4; // Modulus
+document.getElementById("demo").innerHTML += "Addition: " + result1 + "<br>";
+document.getElementById("demo").innerHTML += "Subtraction: " + result2 + "<br>";
+document.getElementById("demo").innerHTML += "Multiplication: " + result3 + "<br>";
+document.getElementById("demo").innerHTML += "Division: " + result4 + "<br>";
+document.getElementById("demo").innerHTML += "Modulus: " + result5 + "<br>";
+
+// Assignment operators
+var x = 5;
+x += 3; // Equivalent to: x = x + 3
+document.getElementById("demo").innerHTML += "Assignment: " + x + "<br>";
+
+// Comparison operators
+var a = 5;
+var b = 7;
+var isEqual = (a === b); // Strict equality
+document.getElementById("demo").innerHTML += "Equality: " + isEqual + "<br>";
+
+// Logical operators
+var isTrue = true;
+var isFalse = false;
+var logicalAnd = isTrue && isFalse; // Logical AND
+var logicalOr = isTrue || isFalse; // Logical OR
+document.getElementById("demo").innerHTML += "Logical AND: " + logicalAnd + "<br>";
+document.getElementById("demo").innerHTML += "Logical OR: " + logicalOr + "<br>";
+
+// String concatenation operator
+var firstName = "John";
+var lastName = "Doe";
+var fullName = firstName + " " + lastName;
+document.getElementById("demo").innerHTML += "String Concatenation: " + fullName + "<br>";
+</script>
+
+</body>
+</html>

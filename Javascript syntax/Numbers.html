@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Numbers</h2>
+
+<p>Number can be written with or without decimals.</p>
+
+<h2>number = 10.50</h2>
+<p id="demo"></p>
+
+<script>
+var num = 10.50;
+
+document.getElementById("demo").innerHTML = "Original Number: " + num + "<br>";
+
+// Using toFixed() method
+var roundedNum = num.toFixed(2);
+document.getElementById("demo").innerHTML += "Rounded to 2 decimal places: " + roundedNum + "<br>";
+
+// Using toString() method
+var strNum = num.toString();
+document.getElementById("demo").innerHTML += "Number as a string: " + strNum + "<br>";
+
+// Using isNaN() method
+var result = isNaN(num);
+document.getElementById("demo").innerHTML += "Is NaN? " + result + "<br>";
+
+// Using isFinite() method
+var result2 = isFinite(num);
+document.getElementById("demo").innerHTML += "Is Finite? " + result2 + "<br>";
+</script>
+
+</body>
+</html>

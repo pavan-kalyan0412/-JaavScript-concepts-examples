@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Strings</h2>
+
+<p>Strings can be written with double or single quotes.</p>
+
+<p id="demo"></p>
+
+<script>
+var str = 'John Doe';
+
+document.getElementById("demo").innerHTML = "Original String: " + str + "<br>";
+
+// Using toUpperCase() method
+var upperCaseStr = str.toUpperCase();
+document.getElementById("demo").innerHTML += "Uppercase: " + upperCaseStr + "<br>";
+
+// Using toLowerCase() method
+var lowerCaseStr = str.toLowerCase();
+document.getElementById("demo").innerHTML += "Lowercase: " + lowerCaseStr + "<br>";
+
+// Using length property
+var strLength = str.length;
+document.getElementById("demo").innerHTML += "Length: " + strLength + "<br>";
+
+// Using indexOf() method
+var index = str.indexOf('Doe');
+document.getElementById("demo").innerHTML += "Index of 'Doe': " + index + "<br>";
+
+// Using slice() method
+var slicedStr = str.slice(0, 4);
+document.getElementById("demo").innerHTML += "Slice from index 0 to 4: " + slicedStr + "<br>";
+
+// Using replace() method
+var replacedStr = str.replace('Doe', 'Smith');
+document.getElementById("demo").innerHTML += "Replace 'Doe' with 'Smith': " + replacedStr + "<br>";
+</script>
+
+</body>
+</html>
