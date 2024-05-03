@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Statements Example</title>
+</head>
+<body>
+
+<h2>JavaScript Statements Example</h2>
+
+<p>This HTML document contains JavaScript statements demonstrating various types of statements.</p>
+
+<p>Open the browser console to view the output.</p>
+
+<script>
+    // Variable Declaration Statement
+    var x;
+
+    // Assignment Statement
+    x = 5;
+
+    // Conditional Statement (if-else)
+    if (x > 0) {
+        console.log("x is positive");
+    } else {
+        console.log("x is non-positive");
+    }
+
+    // Loop Statement (for loop)
+    for (var i = 0; i < 5; i++) {
+        console.log("Iteration " + (i + 1));
+    }
+
+    // Function Declaration Statement
+    function greet(name) {
+        console.log("Hello, " + name + "!");
+    }
+
+    // Function Call Statement
+    greet("John");
+
+    // Return Statement (inside a function)
+    function add(a, b) {
+        return a + b;
+    }
+
+    // Declaration Statement (const)
+    const PI = 3.14;
+
+    // Error Handling Statement (try-catch)
+    try {
+        // Attempt to execute potentially error-prone code
+        console.log(undefinedVariable); // This will throw an error
+    } catch (error) {
+        // Handle the error
+        console.log("An error occurred: " + error.message);
+    }
+</script>
+
+</body>
+</html>
